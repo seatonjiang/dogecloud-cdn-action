@@ -1,0 +1,24 @@
+{
+  "name": "@seatonjiang/dogecloud-cdn-action",
+  "version": "1.0",
+  "description": "GitHub Action for refresh the DogeCloud CDN",
+  "license": "MIT",
+  "homepage": "https://github.com/seatonjiang/dogecloud-cdn-action",
+  "bugs": {
+    "url": "https://github.com/seatonjiang/dogecloud-cdn-action/issues",
+    "email": "hi@seatonjiang.com"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx ncc build src/index.js -o dist"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
