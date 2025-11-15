@@ -1,0 +1,22 @@
+name: "DogeCloud CDN Action"
+description: "GitHub Action for refresh the DogeCloud CDN"
+author: "Seaton Jiang"
+branding:
+  color: "blue"
+  icon: "cloud"
+inputs:
+  access_key:
+    description: "AccessKey"
+    required: true
+  secret_key:
+    description: "SecretKey"
+    required: true
+  type:
+    description: "Type of refresh"
+    required: true
+  urls:
+    description: "URLs to refresh"
+    required: true
+runs:
+  using: "node24"
+  main: "dist/index.js"
